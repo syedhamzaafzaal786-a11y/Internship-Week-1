@@ -1,59 +1,59 @@
-# Titanic Survival Analysis: An Exploratory Data Analysis
+# Titanic Survival Story: 6 Publication-Quality Visualizations
 
-> A complete EDA of the Titanic dataset exploring who survived the disaster and why
+> Extended EDA with professional visualizations telling the story of who survived the Titanic and why
 
 ![Titanic](https://img.shields.io/badge/dataset-Titanic-blue)
 ![Python](https://img.shields.io/badge/python-3.9+-green)
-![License](https://img.shields.io/badge/license-MIT-orange)
+![Visualizations](https://img.shields.io/badge/visualizations-6-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ## 📋 Overview
 
-This project performs a comprehensive exploratory data analysis (EDA) on the classic Titanic dataset. The goal is to understand the factors that influenced survival during the Titanic disaster through data cleaning, visualization, and statistical analysis. This is the canonical first step for any data science portfolio.
+This project extends the lesson-1 Titanic EDA by creating **6 publication-quality visualizations** that tell a compelling survival story. Each chart is professionally designed with clear titles, labelled axes, appropriate colors, and a one-sentence takeaway.
 
-**Key Question**: *Who survived the Titanic and why?*
+**The Story**: Who survived the Titanic and why? The visualizations reveal how gender, class, age, family size, and their interactions determined survival.
 
-## 🎯 What I Did
+## 🎯 What This Project Does
 
-- **Data Loading**: Imported the Titanic dataset with proper error handling
-- **Data Cleaning**: 
-  - Imputed missing Age values using median by passenger class and sex
-  - Extracted deck information from Cabin (77% missing → created 'has_cabin' flag)
-  - Filled missing Embarked values with mode
-  - Created new features: Family Size, Is Alone, Title
-- **Exploratory Analysis**:
-  - Survival distribution and rates
-  - Gender-based survival analysis
-  - Passenger class impact on survival
-  - Age distribution and survival patterns
-  - Family size effect on survival
-  - Correlation analysis between features
-  - Title analysis as social status proxy
-  - Interaction effects (Class × Sex)
-- **Visualization**: Created 10+ professional plots using Matplotlib and Seaborn
-- **Findings**: Documented clear, actionable insights about survival patterns
+- **Extends Lesson-1**: Builds upon the cleaned dataset from the first assignment
+- **6 Publication-Quality Charts**: Professional visualizations ready for reports or presentations
+- **Clear Storytelling**: Each chart has a one-line takeaway explaining its significance
+- **Written Summary**: 200-word executive summary of findings
+- **Reproducible**: Runs end-to-end with the same data cleaning as lesson-1
 
-## 📊 Key Findings
+## 📊 The 6 Visualizations
 
-| Factor | Finding |
-|--------|---------|
-| **Gender** | Women survived at **74%** vs 19% for men (strongest predictor) |
-| **Passenger Class** | 1st class: **63%**, 2nd: **47%**, 3rd: **24%** survival |
-| **Age** | Children under 10 had **60%** survival rate |
-| **Family Size** | Optimal: 1-3 family members (**55-60%** survival) |
-| **Title** | 'Mrs' = **79%**, 'Miss' = **70%**, 'Mr' = **16%** survival |
-| **Most Vulnerable** | 3rd class men: only **14%** survived |
-| **Most Privileged** | 1st class women: **97%** survived |
+| # | Chart Title | Key Finding |
+|---|-------------|-------------|
+| 1 | **Titanic Survival Distribution** | Only 38.4% survived - 549 lives lost |
+| 2 | **Gender Disparity in Survival** | Women: 74.2% vs Men: 18.9% (4x difference) |
+| 3 | **Survival by Passenger Class** | First: 62.9% vs Third: 24.2% (3x difference) |
+| 4 | **Age Distribution with Survival** | Children under 12 had highest survival |
+| 5 | **Impact of Family Size** | 1-3 members = 55-60% survival (optimal) |
+| 6 | **Class × Gender Interaction** | First women: 96.7% vs Third men: 14.2% |
 
-> **Bottom Line**: Survival was heavily determined by **gender, class, and social status** - reflecting the stark inequalities of early 20th-century society.
+### Chart Previews
+
+**Chart 2: Gender Disparity**
+![Gender Chart](https://via.placeholder.com/400x250?text=Gender+Disparity+Chart)
+
+**Chart 6: Class × Gender Interaction**
+![Interaction Chart](https://via.placeholder.com/400x250?text=Class+Gender+Interaction)
 
 ## 🛠️ Technologies Used
 
 - **Python 3.9+** - Core programming language
-- **Pandas** - Data manipulation and analysis
+- **Pandas** - Data manipulation and cleaning
 - **NumPy** - Numerical operations
-- **Matplotlib** - Basic plotting
+- **Matplotlib** - Base plotting library
 - **Seaborn** - Statistical visualizations
-- **Jupyter Notebook** - Interactive development environment
+- **Jupyter Notebook** - Interactive development
 
-## 📁 Project Structure
+### Quality Settings Applied
 
+```python
+plt.rcParams['figure.dpi'] = 300        # High resolution
+plt.rcParams['savefig.dpi'] = 300       # Publication quality
+plt.rcParams['font.size'] = 11          # Readable text
+plt.rcParams['axes.labelsize'] = 12     # Clear axis labels
+plt.rcParams['axes.titlesize'] = 14     # Bold titles
